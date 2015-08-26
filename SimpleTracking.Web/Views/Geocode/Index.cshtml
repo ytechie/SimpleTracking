@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Geocode";
+}
+
+<h2>Upload Geocode File</h2>
+<h3><a href="http://geocoder.ca/?freedata=1">format</a></h3>
+<pre>
+    00501,HOLTSVILLE,NY,40.8152,73.0455,SUFFOLK
+    00544,HOLTSVILLE,NY,40.8152,73.0455,SUFFOLK
+    00601,ADJUNTAS,PR,18.1788,66.7516,ADJUNTAS
+    00602,AGUADA,PR,18.381389,67.188611,AGUADA
+    00603,AGUADILLA,PR,18.4554,67.1308,AGUADILLA
+    00604,AGUADILLA,PR,18.4812,67.1467,AGUADILLA
+</pre>
+<form action="/Geocode/upload" method="post" enctype="multipart/form-data">
+    <label for="file">Filename:</label>
+    <input type="file" name="file" id="file" />
+
+    <input type="submit" name="submit" value="Submit" />
+</form>

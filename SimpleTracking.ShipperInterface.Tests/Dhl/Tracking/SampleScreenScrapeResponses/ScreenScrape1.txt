@@ -1,0 +1,1439 @@
+﻿<script language="javascript" type="text/javascript">
+	window.name = "TRK_WIN";
+</script>
+
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+	<html>
+	<head>
+		<title>DHL: Track details</title>	
+			<meta name="keywords" content="dhl, airborne, airborne express, airborne-express, airbourne, airborn, shipping, shipment, overnight, express, freight, transportation, logistics, aircourier, Sky Courier, mail, air cargo, carrier, warehousing, tracking, delivery, package, distribution, same-day, next-day, second-day, Lightship, Libra, Flight-Ready, air express, DHL Same Day"> 
+			<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">		
+		
+
+<LINK REL="styleSheet" HREF="http://www.dhl-usa.com/css/dhl_style_common.css" TYPE="text/css">
+
+		<script language="javascript" src="http://www.dhl-usa.com/js/utilHover.js" type="text/javascript"></script>
+		<script language="javascript" src="http://www.dhl-usa.com/js/utilCommon.js" type="text/javascript"></script>
+		
+		<script language="javascript" type="text/javascript">
+			//<!--
+			//sub:WriteTrackRsltsHTML()
+			var isNN4 = document.layers;
+			 
+				
+				function CheckForKeyPressLeft13() {
+				
+					if(window.event.keyCode==13)
+					{
+						if (window.event.srcElement.name == 'q')
+							SearchSubmit();
+						else
+							if (window.event.srcElement.name == 'txtPassword')
+							  submitLoginRequest();
+					}				
+				}
+				
+			
+			
+			function SwapImage(name,path)
+			{	
+						
+				document[name].src = path;
+	
+   			}
+			// load all hover image objects
+			loadImages("http://www.dhl-usa.com/images");
+		
+			// function redirects user to selected services drop down item
+			function goService() {
+				var objSel = document.frmServices.selProfile;
+				if (objSel.options[objSel.selectedIndex].value != '')
+					document.location = objSel.options[objSel.selectedIndex].value;
+			}
+			function goodBrowser()
+			/*	Checks if user has cookies turned on. */
+			{
+				if (!document.cookie) document.cookie="enabled=true";	//if no cookie, try to set one
+				if (!document.cookie) return false;						//if no cookie, no good
+				return true;
+			}
+
+			
+			function PopNewWindow(strURL)
+			{	
+			settings = "left=20,top=20,height=500,width=600,scrollbars=yes,status=yes,location=no,toolbar=yes,resizable=yes"
+			nWin = window.open(strURL,"Win",settings);
+			nWin.focus();
+			}
+			
+					function PopNewWindow1(strURL)
+			{	
+			settings = "left=20,top=20,height=500,width=750,scrollbars=yes,status=yes,location=yes,toolbar=yes,resizable=yes"
+			nWin = window.open(strURL,"Win",settings);
+			nWin.focus();
+			}
+			
+			function PopNewWindowHometown(strURL)
+			{	
+			settings = "left=130,top=20,height=550,width=750,scrollbars=yes,status=yes,location=no,toolbar=yes,resizable=yes"
+			nWin = window.open(strURL,"Win",settings);
+			nWin.focus();
+			}
+			
+			function PopMi3NewWindow(strURL)
+			{	
+			settings = "left=20,top=20,height=600,width=830,scrollbars=yes,status=yes,location=no,toolbar=yes,resizable=yes"
+			nWin = window.open(strURL,"Win",settings);
+			nWin.focus();
+			}
+			
+			function PopCustServWindow(strURL)
+			{	
+			settings = "left=20,top=20,height=600,width=830,scrollbars=yes,status=yes,location=no,toolbar=yes,resizable=yes"
+			nWin = window.open(strURL,"Win",settings);
+			nWin.focus();
+			}
+			function PopDemoWindow()
+			{	
+			var path = "http://www.dhl-usa.com"
+		
+		//	settings = "left=20,top=20,height=530,width=795,scrollbars=no,status=yes,location=yes,toolbar=yes,resizable=yes"
+			settings = "left="+((screen.width/2)- 397.5)+", top="+((screen.height/2) - 265)+",height=530,width=795,scrollbars=no,status=no,location=no,toolbar=no,resizable=no"
+			
+			nWin = window.open(path + "/home/demo/index.asp","Win",settings);
+			nWin.focus();
+			}
+			function PopProViewDemoWindow(mypage,myname,w,h,scroll,center)
+			{
+			var win=null;	
+			LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;	
+			settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
+ 			if (!win || win.closed)
+  				{
+    				win=window.open(mypage,myname,settings);
+ 			 	}
+ 			 	else
+ 			 	{
+   				win.focus();
+    				win.location.href=mypage
+  				}
+			}
+			//New script added
+			// change this to modify the amount of time (in milliseconds) before the popup appears 
+	
+	
+    
+    function getCookie(name){
+        var pos = document.cookie.indexOf(name);
+        if(pos == -1){return false;}
+        var start = pos + name.length + 1;
+        var end = document.cookie.indexOf(';',start);
+        if(end == -1){
+            end = document.cookie.length;
+        }
+        var value = document.cookie.substring(start, end);
+        return unescape(value);
+    }
+    
+    function setCookie(name, value){
+        var theCookie = name+"=" + value + "; ";
+        document.cookie = theCookie;
+    }
+
+    function popup_window() {
+        if (getCookie('timeout') != 1) {
+            webVoicePop('Template=27170');
+            setCookie('timeout',1);
+        }
+    }
+
+    function btn_popup_window() {
+        webVoicePop('Template=59695','guitext1=ACNT','Var3=ACNT');
+        setCookie('timeout',1);
+    }
+
+			//End of new script
+			//-->SSSS
+		</script>
+		
+	<meta NAME="WT.cg_n" CONTENT="Tracking">
+	<meta NAME="WT.cg_s" CONTENT="Track Details">
+	<meta NAME="WT.si_n" CONTENT="">
+	<meta NAME="WT.si_x" CONTENT="">
+
+	
+	<script LANGUAGE="Javascript">
+	<!--
+	gVersion="1.0";
+	//-->
+	</script>
+	<script LANGUAGE="Javascript1.1"><!--
+	gVersion="1.1";
+	//-->
+	</script>
+	<script LANGUAGE="Javascript1.2"><!--
+	gVersion="1.2";
+	var RE={"%09":/\t/g, "%20":/ /g, "%23":/\#/g,"%26":/\&/g,"%2B":/\+/g,"%3F":/\?/g,"%5C":/\\/g};
+	//-->
+	</script>
+	<script LANGUAGE="Javascript1.3"><!--
+	gVersion="1.3";
+	//-->
+	</script>
+	<script LANGUAGE="Javascript1.4"><!--
+	gVersion="1.4";
+	//-->
+	</script>
+	<script LANGUAGE="Javascript1.5"><!--
+	gVersion="1.5";
+	//-->
+	</script>
+
+	<script LANGUAGE="Javascript"><!--
+	var gDcsId = "dcslh1x9yoifwzzw4fisxq75d_1h5m";
+	//-->
+	</script>
+	<script LANGUAGE="javascript" src="http://www.dhl-usa.com/js/utilDatacollection.js" type="text/javascript"></script>
+	<noscript>
+	<img BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://statse.webtrendslive.com/dcslh1x9yoifwzzw4fisxq75d_1h5m/njs.gif?dcsuri=/nojavascript&amp;WT.js=No">
+	</noscript>
+	
+		<script language="javascript" src="js/utilTrackByNbr.js" type="text/javascript"></script>
+		<script language="javascript" src="js/utilTrackRslts.js" type="text/javascript"></script>
+		<script language="javascript" type="text/javascript">
+		<!--
+		function init(){
+		}
+		function emailDetail(istrTrackingNumber, istrReferenceNumber, istrSubtopic){
+			popWindowTall("http://www.dhl-usa.com/Email/EmailAirborne.asp?mode=Trak&subt=" + istrSubtopic + "&page=track.dhl-usa.com/TrackByNbr.asp&tnbr=" + istrTrackingNumber + "&sref=" + stripBlanks(istrReferenceNumber));
+		}
+		function submitTrackRequest(istrPostType, istrDetailNbr){
+			var objForm						= document.frmTrackRslts;
+			var strPtRef					= "Home"
+			objForm.hdnPostType.value		= istrPostType;
+			objForm.hdnTrackID.value		= istrDetailNbr;
+			//Begin add: For Metatags if tracking is done from Home Page or any other source.
+			if (strPtRef == "Home")
+			{
+				objForm.hdnRefPage.value = "";
+			}
+			//End Add:
+			if (istrPostType == "rsmt"){
+				// if (validateEntries_Sum()){  
+				
+					objForm.submit();
+				// }  
+			}
+			else{
+				
+				objForm.submit();
+			}
+			
+		}
+
+		function showSingleAlert(strTrackNumber)
+		{
+			//popWindowTall("http://www.dhl-usa.com/Email/EmailAirborne.asp?mode=center&page=1&tnbr=" + strTrackNumber);
+			//Begin Add: Changes for ProView
+			var path = "http://proview.dhl-usa.com/GC3/proview/adhocnotify";
+			var userid = "DHL.TRACK";
+			popWindowProview(path + "?appuid=" + userid + "&id=" + strTrackNumber);
+			//End Add: Changes for ProView
+		}
+
+		function popWindowProview(url)
+		{
+			var topPosition = (screen.height)?(screen.height - 475)/2:100;
+			var leftPosition = (screen.width)?(screen.width - 530)/2:100;
+			var description = window.open (url,'ABXWindow','toolbar=no,directories=no,menubar=no,width=500,height=600,resizable=no,status=no,scrollbars=yes,top=' +topPosition + ',left=' + leftPosition)
+			description.focus()
+		}
+
+		
+		function showAlert()
+		{
+			var totalCheckBoxes = 0;
+			var strAwbNumbers=new String();
+			var totalNotifyAwbs = 0;
+			var path = "http://proview.dhl-usa.com/GC3/proview/adhocnotify";
+			var userid = "DHL.TRACK";
+			if (document.frmTrackRslts.chkDelNotify)
+			{
+				if (document.frmTrackRslts.chkDelNotify.length)
+				{
+					totalCheckBoxes = document.frmTrackRslts.chkDelNotify.length;
+				}
+				else
+				{
+					totalCheckBoxes = 1;
+				}
+			}
+			else
+			{
+				alert ("There are no airbills which qualify for delivery notification")
+				return;
+			}
+			for (var i = 0; i < totalCheckBoxes; i++)
+			{
+				if (totalCheckBoxes != 1)
+					var box = document.frmTrackRslts.chkDelNotify[i];
+				else
+					var box = document.frmTrackRslts.chkDelNotify;
+				if (box.checked == true)
+				{
+					totalNotifyAwbs = totalNotifyAwbs + 1;
+					if ( strAwbNumbers == "" )
+						strAwbNumbers = "&id=DHL." + box.value;//Changes done for ProView on 08/05/2006
+					else
+						//strAwbNumbers = box.value + "," + strAwbNumbers;
+						strAwbNumbers = strAwbNumbers + "&id=DHL." + box.value;//Changes done for ProView on 08/05/2006
+				}
+			}
+			if ( totalNotifyAwbs == 0)
+			{
+				alert ("At least one waybill should be selected for delivery notification");
+				return;
+			}
+			
+			if ( totalNotifyAwbs > 1)
+				//popWindowTall("http://www.dhl-usa.com/Email/EmailAirborne.asp?mode=center&page=2&tnbr=" + stripBlanks(strAwbNumbers));
+				popWindowTall(path + "?appuid=" + userid + stripBlanks(strAwbNumbers)); //Changes done for ProView on 08/05/2006
+			else
+				//popWindowTall("http://www.dhl-usa.com/Email/EmailAirborne.asp?mode=center&page=1&tnbr=" + stripBlanks(strAwbNumbers));
+				popWindowTall(path + "?appuid=" + userid + stripBlanks(strAwbNumbers)); //Changes done for ProView on 08/05/2006
+			return;
+		}
+		
+		//BEGIN Change :  REASON - FOR DHL-USA 2.0 SUPPORT - CR 2885: Beaula, Infosys : 09-Aug-2007
+		function SubmitPrint()
+		{
+			
+			window.open('Track_PrintRslts.asp','myWindow','scrollbars=yes,menubar=no,toolbar=no,resizable=no,width=630,height=500,');
+			document.frmPrint.hdnResponse_01.value = document.frmTrackRslts.hdnXMLResponse_01.value
+			document.frmPrint.hdnResponse_02.value = document.frmTrackRslts.hdnXMLResponse_02.value
+			document.frmPrint.hdnResponse_03.value = document.frmTrackRslts.hdnXMLResponse_03.value
+			document.frmPrint.hdnResponse_04.value = document.frmTrackRslts.hdnXMLResponse_04.value
+			document.frmPrint.hdnResponse_05.value = document.frmTrackRslts.hdnXMLResponse_05.value
+			document.frmPrint.hdnResponse_06.value = document.frmTrackRslts.hdnXMLResponse_06.value
+			document.frmPrint.hdnResponse_07.value = document.frmTrackRslts.hdnXMLResponse_07.value
+			document.frmPrint.hdnResponse_08.value = document.frmTrackRslts.hdnXMLResponse_08.value
+			document.frmPrint.hdnResponse_09.value = document.frmTrackRslts.hdnXMLResponse_09.value
+			document.frmPrint.hdnResponse_10.value = document.frmTrackRslts.hdnXMLResponse_10.value
+			document.frmPrint.submit();
+			
+		}
+		//'END Change :  REASON - FOR DHL-USA 2.0 SUPPORT - CR 2885: Beaula, Infosys : 09-Aug-2007
+		
+		//-->
+		</script> 
+		
+	</head>
+
+		
+	<body onload="init();" onresize="if (document.layers){document.location.reload();}" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff">
+		<a name="top"></a>
+	
+	<script type="text/javascript">
+	var gstrWWWPath = "http://www.dhl-usa.com";
+	var gstrTrackPath = "http://track.dhl-usa.com";
+	var gstrSigProofPath = "http://sigpod.dhl-usa.com";
+	var gstrSSOPath = "https://sso.dhl-usa.com";
+	var gstrSBCPath = "http://sbw.dhl-usa.com";
+	var gstrNewFltReadyPath = "https://prepaidshipping.dhl-usa.com/landing.asp?nav=PrepaidShip";
+	var gstrImagesPath = "http://www.dhl-usa.com/images";
+	var	gstrSearchSite = "www";
+	var strSearchURL ="http://search.dhl-usa.com/search";
+	var intVersion = "5";
+	var gblnIsLoggedIn = "False";
+	var strURL = "";
+	</script>
+	<script type="text/javascript" src="http://www.dhl-usa.com/js/utilNavPrd.js"></script>
+
+
+	<!-- START Body -->
+	<table border="0" cellspacing="0" cellpadding="0" width="773" bgcolor="#ffffff">
+		<tr valign="top">
+
+			<td width="168" bgcolor="#ffcc00" class="bodytext">
+		<script type="text/javascript">
+			selection=2; 
+			fnTopMenuSel(2); //To keep top menu bar highlighted
+        </script>
+		<table border="0" cellpadding="0" cellspacing="0" bgcolor="#ffcc00"><tr><td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><table border="0" cellpadding="0" cellspacing="0" width="168"><script language="javascript">
+		function shippingPref()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "sp";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.hdnSiteID.value = "1";
+		document.authnavlink.submit();
+		}
+		function BillAccount()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "1";
+		document.authnavlink.hdnSiteID.value = "2";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.submit();
+		}
+	</script><script language="javascript">
+		function shippingPref()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "sp";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.hdnSiteID.value = "1";
+		document.authnavlink.submit();
+		}
+		function BillAccount()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "1";
+		document.authnavlink.hdnSiteID.value = "2";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.submit();
+		}
+	</script><tr><td bgcolor="#ffffff" colspan="3"><img src="http://www.dhl-usa.com/images/spacer.gif" width="168" height="1"/></td></tr><tr><td bgcolor="#ffcc00" colspan="3"><img src="http://www.dhl-usa.com/images/SCR_image_lft_trk.jpg" width="168" height="56" alt=""/></td></tr><tr><td bgcolor="#ffffff" colspan="3"><img src="http://www.dhl-usa.com/images/spacer.gif" width="168" height="1"/></td></tr><tr><td bgcolor="#ffcc00" colspan="3"><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td height="15"><img src="http://www.dhl-usa.com/images/blank.gif" alt="" border="0" height="15" width="1"/></td></tr><tr><td><p class="pL5"><span class="headerBlack">Track</span></p></td></tr></table></td></tr><tr><td bgcolor="#ffcc00" colspan="3"><img src="http://www.dhl-usa.com/images/spacer.gif" width="168" height="20"/></td></tr><tr><td width="13" bgcolor="#ffcc00" align="right"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9" alt="" border="0" vspace="3" hspace="5"/></td><td colspan="2" width="155" bgcolor="#ffcc00"><a onMouseOver="window.status=''; return true;" onMouseOut="window.status=''; return true;" tabindex="1" href="http://track.dhl-usa.com/TrackByNbr.asp?nav=TrackBynumber"><span class="headerRed">Track by number</span></a></td></tr><tr><td width="13" bgcolor="#ffcc00" align="right"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9" alt="" border="0" vspace="3" hspace="5"/></td><td colspan="2" width="155" bgcolor="#ffcc00" class="bodytext"><a onMouseOver="window.status='Track by reference'; return true;" onMouseOut="window.status=''; return true;" tabindex="1" href="http://track.dhl-usa.com/TrackByRef.asp?nav=TrackByRef">Track by reference</a></td></tr><tr><td width="13" bgcolor="#ffcc00" align="right"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9" alt="" border="0" vspace="3" hspace="5"/></td><td colspan="2" width="155" bgcolor="#ffcc00" class="bodytext"><a onMouseOver="window.status='Get delivery signature'; return true;" onMouseOut="window.status=''; return true;" tabindex="1" href="http://sigpod.dhl-usa.com/SigByNbr.asp?nav=TrackBySig">Get delivery signature</a></td></tr><tr><td width="13" bgcolor="#ffcc00" align="right"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9" alt="" border="0" vspace="3" hspace="5"/></td><td colspan="2" width="155" bgcolor="#ffcc00" class="bodytext"><a onMouseOver="window.status='Track DHL Same Day service'; return true;" onMouseOut="window.status=''; return true;" tabindex="1" href="http://track.dhl-usa.com/TrackDHLSameDay.asp?nav=TrackSameDay">Track DHL Same Day service</a></td></tr><tr><td width="13" bgcolor="#ffcc00" align="right"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9" alt="" border="0" vspace="3" hspace="5"/></td><td colspan="2" width="155" bgcolor="#ffcc00" class="bodytext"><a onMouseOver="window.status='Monitor shipments'; return true;" onMouseOut="window.status=''; return true;" tabindex="1" href="https://sso.dhl-usa.com/sso/login_main.asp?hdnSiteId=7&amp;nav=Login">Monitor shipments</a></td></tr><script language="javascript">
+		function shippingPref()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "sp";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.hdnSiteID.value = "1";
+		document.authnavlink.submit();
+		}
+		function BillAccount()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "1";
+		document.authnavlink.hdnSiteID.value = "2";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.submit();
+		}
+	</script><script language="javascript">
+		function shippingPref()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "sp";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.hdnSiteID.value = "1";
+		document.authnavlink.submit();
+		}
+		function BillAccount()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "1";
+		document.authnavlink.hdnSiteID.value = "2";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.submit();
+		}
+	</script><script language="javascript">
+		function shippingPref()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "sp";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.hdnSiteID.value = "1";
+		document.authnavlink.submit();
+		}
+		function BillAccount()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "1";
+		document.authnavlink.hdnSiteID.value = "2";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.submit();
+		}
+	</script><script language="javascript">
+		function shippingPref()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "sp";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.hdnSiteID.value = "1";
+		document.authnavlink.submit();
+		}
+		function BillAccount()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "1";
+		document.authnavlink.hdnSiteID.value = "2";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.submit();
+		}
+	</script><script language="javascript">
+		function shippingPref()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "sp";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.hdnSiteID.value = "1";
+		document.authnavlink.submit();
+		}
+		function BillAccount()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "1";
+		document.authnavlink.hdnSiteID.value = "2";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.submit();
+		}
+	</script><script language="javascript">
+		function shippingPref()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "sp";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.hdnSiteID.value = "1";
+		document.authnavlink.submit();
+		}
+		function BillAccount()
+		{
+		var path
+		path = document.authnavlink.hdnSSOpath.value;
+		document.authnavlink.hdnOption.value = "1";
+		document.authnavlink.hdnSiteID.value = "2";
+		document.authnavlink.action = path + "/sso/authhomepage.asp";
+		document.authnavlink.submit();
+		}
+	</script><form method="POST" id="frmMainNav" name="frmMainNav" action="https://sso.dhl-usa.com/sso/login_main.asp?nav=Login&amp;hdnSiteID=0"><tr><td colspan="3"><img src="http://www.dhl-usa.com/images/spacer.gif" width="1" height="25" alt=""/></td></tr><tr><td colspan="3"><table cellspacing="0" cellpadding="0" width="100%"><td width="5"><img src="http://www.dhl-usa.com/images/spacer.gif" width="5" height="2" alt=""/></td><td bgcolor="#ffffff" width="158"><img src="http://www.dhl-usa.com/images/spacer.gif" width="10" height="2" alt=""/></td><td width="5"><img src="http://www.dhl-usa.com/images/spacer.gif" width="5" height="2" alt=""/></td></table></td></tr><tr><td colspan="3"><img src="http://www.dhl-usa.com/images/spacer.gif" width="1" height="8" alt=""/></td></tr><tr><td colspan="3"><table cellspacing="0" cellpadding="0" width="100%"><td width="3%"><img src="http://www.dhl-usa.com/images/spacer.gif" width="2" height="1" alt=""/></td><td width="97%" align="left"><div class="tableHeader">Log in to DHL</div></td></table></td></tr><tr><td colspan="3"><img src="http://www.dhl-usa.com/images/spacer.gif" width="1" height="8" alt=""/></td></tr><tr valign="top"><td colspan="3"><table border="0" cellspacing="0" cellpadding="0" width="100%"><td width="5"><img src="http://www.dhl-usa.com/images/spacer.gif" width="5" height="1" alt=""/></td><td width="58" class="bodytext">User ID</td><td width="100" align="right"><input type="text" class="inputlogin" name="txtLoginId" size="8" maxlength="50" style="width:93px; font-size:8pt;" tabindex="1"/></td><td width="5"><img src="http://www.dhl-usa.com/images/spacer.gif" width="5" height="1" alt=""/></td></table></td></tr><tr valign="top"><td colspan="3"><table border="0" cellspacing="0" cellpadding="0" width="100%"><td width="5"><img src="http://www.dhl-usa.com/images/spacer.gif" width="5" height="1" alt=""/></td><td width="58" class="bodytext">Password</td><td width="100" align="right"><input type="password" class="inputlogin" name="txtPassword" size="8" maxlength="12" style="width:93px; font-size:8pt;" tabindex="1"/></td><td width="5"><img src="http://www.dhl-usa.com/images/spacer.gif" width="5" height="1" alt=""/></td></table></td></tr><tr valign="top"><td colspan="3"><table border="0" cellspacing="0" cellpadding="0" width="100%"><td width="1%"><img src="http://www.dhl-usa.com/images/spacer.gif" width="3" height="1" alt=""/></td><td align="left" valign="top" width="7%"><input name="chkRememberLogin" type="checkbox" tabindex="1"/></td><td width="35%" align="left" valign="middle" class="bodytext">Remember my User ID</td><td width="5%"><img src="http://www.dhl-usa.com/images/spacer.gif" width="3" height="1" alt=""/></td></table></td></tr><tr><td colspan="3"><img src="http://www.dhl-usa.com/images/spacer.gif" width="162" height="5" alt=""/></td></tr><tr><td colspan="3"><table cellspacing="0" cellpadding="0" width="100%"><td width="5"><img src="http://www.dhl-usa.com/images/spacer.gif" width="7" height="2" alt=""/></td><td bgcolor="#ffffff" width="158"><img src="http://www.dhl-usa.com/images/spacer.gif" width="10" height="2" alt=""/></td><td width="5"><img src="http://www.dhl-usa.com/images/spacer.gif" width="5" height="2" alt=""/></td></table></td></tr><tr><td colspan="3"><img src="http://www.dhl-usa.com/images/spacer.gif" width="1" height="5" alt=""/></td></tr><tr><td colspan="3" align="right"><table cellpadding="0" cellspacing="0" border="0"><tr><td><a onMouseOver="window.status='Log in'; return true;" onMouseOut="window.status=''; return true;" href="javascript:submitLoginRequest();" onclick="submitLoginRequest();" class="linkBold" tabindex="1">Log in</a></td><td><div class="pL5"><a onMouseOver="window.status='Log in'; return true;" onMouseOut="window.status=''; return true;" href="javascript:submitLoginRequest()" onclick="submitLoginRequest();" tabindex="1"><img src="http://www.dhl-usa.com/images/btn_arrow_red_right2.gif" width="17" height="17" alt="Log in" border="0"/></a></div></td><td width="5"><img src="http://www.dhl-usa.com/images/spacer.gif" width="1" height="1" alt=""/></td></tr></table></td></tr><tr><td colspan="3"><img src="http://www.dhl-usa.com/images/spacer.gif" width="1" height="2" alt=""/></td></tr><tr><td colspan="3"><table cellpadding="0" cellspacing="0" border="0" width="100%"><td width="4%"><img src="http://www.dhl-usa.com/images/spacer.gif" width="7" height="2" alt=""/></td><td width="96%" class="bodytext"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9" alt=""/><img src="http://www.dhl-usa.com/images/spacer.gif" width="5" height="1" alt=""/><a onMouseOver="window.status='Forgot password/user ID'; return true;" onMouseOut="window.status=''; return true;" href="javascript:SubmitForgetRequest()" onclick="SubmitForgetRequest();" style="color:#cc0000" tabindex="1">Forgot password/user ID?</a></td></table></td></tr><tr><td colspan="3"><img src="http://www.dhl-usa.com/images/spacer.gif" width="1" height="10" alt=""/></td></tr><tr><td colspan="3"><table cellpadding="0" cellspacing="0" border="0" width="100%"><td width="4%"><img src="http://www.dhl-usa.com/images/spacer.gif" width="7" height="2" alt=""/></td><td width="96%" class="bodytext"><span class="headerBlack">New to DHL online?</span></td></table></td></tr><tr><td colspan="3"><table cellpadding="0" cellspacing="0" border="0" width="100%"><td width="4%"><img src="http://www.dhl-usa.com/images/spacer.gif" width="7" height="2" alt=""/></td><td width="96%" class="bodytext">
+
+				Registration is quick and free. 
+				</td></table></td></tr><tr><td colspan="3"><img src="http://www.dhl-usa.com/images/spacer.gif" width="1" height="2" alt=""/></td></tr><tr><td colspan="3"><table border="0" cellspacing="0" cellpadding="0" width="100%"><td width="4%"><img src="http://www.dhl-usa.com/images/spacer.gif" width="7" height="2" alt=""/></td><td width="96%" class="bodytext"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9" alt=""/><img src="http://www.dhl-usa.com/images/spacer.gif" width="5" height="1" alt=""/><a href="https://sso.dhl-usa.com/sso/register.asp?nav=Reg" tabindex="1" onMouseOver="window.status='Sign up now'; return true;" onMouseOut="window.status=''; return true;">Sign up now</a></td></table></td></tr><input type="hidden" name="hdnSubmit" value="Y"/><input type="hidden" name="hdnLoginID" value=""/><input type="hidden" name="hdnSiteID" value="0"/><input type="hidden" name="hdnSSOPath" value="https://sso.dhl-usa.com"/></form><form method="POST" id="frmAlternateNav" name="frmAlternateNav"><input type="hidden" name="hdnLoginID" value=""/></form><script language="javascript">
+			function submitLoginRequest()
+			{
+				
+				document.frmMainNav.submit();
+			}
+			function SubmitForgetRequest()
+			
+			{
+				var path;
+				path = document.frmMainNav.hdnSSOPath.value;
+				document.frmMainNav.hdnLoginID.value=document.frmMainNav.txtLoginId.value;
+				document.frmMainNav.action= path + "/sso/Forgot.asp?nav=Forgot";
+				document.frmMainNav.submit();
+			}
+		
+			if (document.layers) 
+			{
+				window.captureEvents(Event.KEYDOWN);
+				window.onkeydown = CheckForKeyPressLeft13;
+			}
+			else 
+			{
+				document.frmMainNav.txtPassword.onkeydown=CheckForKeyPressLeft13;
+			}
+
+		</script><tr><td bgcolor="#ffcc00"><img src="http://www.dhl-usa.com/images/blank.gif" width="13" height="1"/></td><td bgcolor="#ffcc00"><img src="http://www.dhl-usa.com/images/blank.gif" width="13" height="1"/></td><td bgcolor="#ffcc00"><img src="http://www.dhl-usa.com/images/blank.gif" width="128" height="1"/></td></tr></table></td></tr></table></td></tr></table>
+</td>
+			<td><img src="http://www.dhl-usa.com/images/blank.gif" width="10" height="1"></td>
+			<!-- Content starts here -->
+			<td width="578" class="bodytext">
+<noscript>
+	<table border="0" cellpadding="0" cellspacing="0" width="603" bgcolor="#ffffff">
+		<tr>
+			<td rowspan="3"><img src="http://www.dhl-usa.com/images/blank.gif" width="25" height="1"></td>
+			<td><img src="http://www.dhl-usa.com/images/blank.gif" width="553" height="15"></td>
+			<td rowspan="3"><img src="http://www.dhl-usa.com/images/blank.gif" width="25" height="1"></td>
+		</tr>
+		<tr>
+			<td class="txtTitleRed">This page is best viewed in a browser that supports Javascript. Your browser either does not support Javascript or has Javascript disabled. If you want to correctly view this page, please upgrade your browser or enable Javascript support.</td>
+		</tr>
+		<tr>
+			<td><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="15"></td>
+		</tr>
+	</table>
+</noscript>
+<form name="frmTrackRslts" action="TrackRslts.asp?nav=TrackRslt" method="post">
+	<table border="0" cellpadding="0" cellspacing="0" width="585">
+
+		<tr>
+			<td colspan="3"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="15"/></td>
+		</tr>
+		<tr>
+			<td colspan="1" class="pageheaderBlack" align="left">Track results detail</td>
+			<td colspan="1"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/></td>
+			<td align="right"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9"/>  <a href="javascript:SubmitPrint();"><span class="headerArticle" style="text-decoration:underline;">Print this page</span></a>  <img src="http://www.dhl-usa.com/images/i_print.gif" alt="Print" border="0"/></td>
+
+		</tr>
+		<tr>
+			<td colspan="3"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="15"/></td>
+		</tr>
+		<tr>
+			<td class="darkGrey" colspan="3"><img src="http://www.dhl-usa.com/images/blank.gif" width="10" height="1"/></td>
+		</tr>
+		<tr valign="middle" class="lightGrey">
+			<td colspan="2" class="label" style="PADDING-BOTTOM:2px;PADDING-TOP:1px"><span class="tableHeader">Current status  for 12991078030...</span></td>
+
+			<td align="right" class="label"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9"/>  <a href="javascript:openWindow('help/TrackHelp.asp?ZoneId=Zone5','420','300','300','200','','no','no','yes','no','DHL - Track Help')">Help</a> </td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" width="585">
+		<tr>
+			<td class="mediumGrey">
+				<table border="0" cellpadding="0" cellspacing="0" width="585" style="BORDER-LEFT: #cccccc 1px solid;BORDER-RIGHT: #cccccc 1px solid;BORDER-BOTTOM: #cccccc 1px solid;">
+
+					<tr class="white">
+						<td width="533" colspan="2">
+							<table border="0" cellspacing="0" cellpadding="0" width="100%">
+								<tr>
+									<td colspan="2" class="pL5_pT5" width="250">
+										<table border="0" cellspacing="0" cellpadding="0" width="100%">
+											<tr>
+												<td class="headerRegular" style="FONT-SIZE:18px" valign="middle">Shipment delivered. <img src="http://www.dhl-usa.com/images/delivered.gif"/>
+
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" height="3"><img src="http://www.dhl-usa.com/images/blank.gif"/></td>
+								</tr>
+								<tr>
+
+									<td width="323" class="pL5" colspan="2" valign="middle">
+										<table border="0" cellspacing="0" cellpadding="0" width="100%">
+											<tr>
+												<td valign="middle" width="5">
+													<img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9" border="0"/>
+												</td>
+												<td class="pL5">
+													<a href="http://sigpod.dhl-usa.com/SigByNbr.asp?ShipmentNumber=12991078030&amp;nav=TrackBySig" align="left" style="FONT-SIZE:16px;text-decoration:underline;">View signature</a>
+
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr class="white">
+									<td class="pL5 pT10"><span class="headerRegular">Delivered on:</span>
+										<span class="headerRegular">5/12/2008  12:19 pm</span>
+
+									</td>
+								</tr>
+								<tr class="white">
+									<td class="pL5"><span class="headerRegular">Delivered to:</span>
+										<span class="headerRegular">Receptionist</span>
+									</td>
+								</tr>
+								<tr class="white">
+
+									<td class="pL5"><span class="headerRegular">Signed for by:</span>
+										<span class="headerRegular">J PACKARD</span><img src="http://www.dhl-usa.com/images/blank.gif" width="20" height="1"/><a href="javascript:popWindow('http://track.dhl-usa.com/help/TrackHelp.asp?ZoneId=Zone6','450','350','300','200','','no','no','yes','no','DHL - Track Help')" class="headerRegular" style="text-decoration:underline;">What is this?</a>
+									</td>
+								</tr>
+								<tr class="white">
+									<td class="pL5 pB5 headerRegular" colspan="2">
+									Want to get the status of all your shipments in one place?<img src="http://www.dhl-usa.com/images/blank.gif" width="20" height="1"/><a href="http://www.dhl-usa.com/TechTools/detail/TTDetail.asp?nav=TechnologyTools/Tracking/TrackProview" class="headerRegular" style="text-decoration:underline;">Learn more about DHL ProView</a><span style="FONT-SIZE:8px" class="redText">
+
+											<sup>TM</sup></span>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" width="583">
+		<tr>
+			<td><img src="http://www.dhl-usa.com/images/blank.gif" height="14"/></td>
+		</tr>
+		<tr>
+			<td class="darkGrey"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/></td>
+		</tr>
+
+		<tr valign="middle">
+			<td class="lightGrey">
+				<table border="0" cellpadding="0" cellspacing="0" width="583" valign="top">
+					<tr valign="middle" class="lightGrey">
+						<td class="pL5" style="PADDING-TOP:1px;PADDING-BOTTOM:2px"><span class="tableHeader">Tracking history...</span></td>
+						<td align="right" class="label"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9"/>  <a href="javascript:openWindow('help/TrackHelp.asp?ZoneId=Zone10','420','300','300','200','','no','no','yes','no','DHL - Track Help')">Help</a> </td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
+		<tr valign="middle">
+			<td class="mediumGrey">
+				<table border="0" cellpadding="0" cellspacing="0" width="583" style="BORDER-LEFT: #cccccc 1px solid;BORDER-RIGHT: #cccccc 1px solid;BORDER-BOTTOM: #cccccc 1px solid;">
+					<tr>
+						<td>
+							<table border="0" cellpadding="0" cellspacing="0" width="583" valign="top">
+
+								<tr>
+									<td class="darkGrey" colspan="6"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="0"/></td>
+								</tr>
+								<tr style="BACKGROUND-COLOR:D0D0D0">
+									<td class="bodytext pL5" style="PADDING-TOP:4px;PADDING-BOTTOM:4px" colspan="1" width="110" height="20"><span class="bold">Date and time</span></td>
+									<td class="bodytext tbCellL pL5" style="PADDING-TOP:4px;PADDING-BOTTOM:4px" colspan="2" width="199"><span class="bold">Status</span></td>
+									<td class="bodytext tbCellL pL5" style="PADDING-TOP:4px;PADDING-BOTTOM:4px" colspan="3" width="274"><span class="bold">DHL Facility Location</span></td>
+
+								</tr>
+								<tr valign="top" bgcolor="#ffffff">
+									<td class="blacktext pL5_pT4_pB4_pR4" colspan="1">5/12/2008    12:19 pm</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="2">
+										<font class="txtContentRedSm">Shipment delivered.</font>  <img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/>
+									</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="3">Bothell, WA<img src="http://www.dhl-usa.com/images/blank.gif" width="20" height="1"/>
+
+										<a href="javascript:popWindow('http://track.dhl-usa.com/help/TrackHelp.asp?ZoneId=Zone9','450','350','300','200','','no','no','yes','no','DHL - Track Help')" class="lnkContentULine" style="text-decoration:underline;">Why is this?</a>
+									</td>
+								</tr>
+								<tr valign="top" bgcolor="#e4e4e4">
+									<td class="blacktext pL5_pT4_pB4_pR4" colspan="1">                      9:21 am</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="2">With delivery courier.  <img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/>
+									</td>
+
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="3">Bothell, WA</td>
+								</tr>
+								<tr valign="top" bgcolor="#ffffff">
+									<td class="blacktext pL5_pT4_pB4_pR4" colspan="1">                      7:08 am</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="2">Arrived at DHL facility.  <img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/>
+									</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="3">Bothell, WA</td>
+
+								</tr>
+								<tr valign="top" bgcolor="#e4e4e4">
+									<td class="blacktext pL5_pT4_pB4_pR4" colspan="1">                      3:02 am</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="2">Depart Facility  <img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/>
+									</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="3">Chehalis Regional Hub, WA</td>
+								</tr>
+
+								<tr valign="top" bgcolor="#ffffff">
+									<td class="blacktext pL5_pT4_pB4_pR4" colspan="1">5/11/2008    10:21 pm</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="2">Processed at DHL Location.  <img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/>
+									</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="3">Chehalis Regional Hub, WA</td>
+								</tr>
+								<tr valign="top" bgcolor="#e4e4e4">
+
+									<td class="blacktext pL5_pT4_pB4_pR4" colspan="1">                    10:13 pm</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="2">In transit.  <img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/>
+									</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="3">Chehalis Regional Hub, WA</td>
+								</tr>
+								<tr valign="top" bgcolor="#ffffff">
+									<td class="blacktext pL5_pT4_pB4_pR4" colspan="1">5/10/2008      4:48 am</td>
+
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="2">Transit through DHL facility  <img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/>
+									</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="3">Chehalis Regional Hub, WA</td>
+								</tr>
+								<tr valign="top" bgcolor="#e4e4e4">
+									<td class="blacktext pL5_pT4_pB4_pR4" colspan="1">5/9/2008        4:03 pm</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="2">Depart Facility  <img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/>
+
+									</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="3">Wilmington, OH</td>
+								</tr>
+								<tr valign="top" bgcolor="#ffffff">
+									<td class="blacktext pL5_pT4_pB4_pR4" colspan="1">                    12:14 pm</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="2">Processed at DHL Location.  <img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/>
+									</td>
+
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="3">Wilmington, OH</td>
+								</tr>
+								<tr valign="top" bgcolor="#e4e4e4">
+									<td class="blacktext pL5_pT4_pB4_pR4" colspan="1">                    11:51 am</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="2">In transit.  <img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/>
+									</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="3">Wilmington, OH</td>
+
+								</tr>
+								<tr valign="top" bgcolor="#ffffff">
+									<td class="blacktext pL5_pT4_pB4_pR4" colspan="1">5/8/2008      12:01 am</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="2" width="199" align="left">Picked Up by DHL.</td>
+									<td class="pL5_pT4_pB4_pR4 tbCell" colspan="3" width="274"></td>
+								</tr>
+							</table>
+						</td>
+
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td><img src="http://www.dhl-usa.com/images/blank.gif" height="15"/></td>
+		</tr>
+		<tr>
+			<td width="100%" class="darkGrey"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/></td>
+
+		</tr>
+		<tr valign="middle">
+			<td>
+				<table border="0" cellpadding="0" cellspacing="0" width="100%" valign="top">
+					<tr valign="middle" class="lightGrey">
+						<td class="pL5" style="PADDING-TOP:1px;PADDING-BOTTOM:2px"><span class="tableHeader">Shipment details...</span></td>
+						<td align="right" class="label"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9"/>  <a href="javascript:openWindow('help/TrackHelp.asp?ZoneId=Zone10','420','300','300','200','','no','no','yes','no','DHL - Track Help')">Help</a> </td>
+
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td width="100%">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%" valign="top" style="BORDER-LEFT: #cccccc 1px solid;BORDER-RIGHT: #cccccc 1px solid;BORDER-BOTTOM: #cccccc 1px solid;" ID="Table1">
+					<tr>
+						<td class="white">
+
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" ID="Table2">
+								<tr>
+									<td colspan="3" class="darkGrey"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="1"/></td>
+								</tr>
+								<tr>
+									<td>
+										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tr>
+												<td width="190" valign="top" align="left">
+
+													<table border="0" cellpadding="0" cellspacing="0" width="100%" ID="Table5">
+														<tr style="BACKGROUND-COLOR:D0D0D0">
+															<td class="label" colwidth="99%">
+																<span class="bold">From</span>
+															</td>
+														</tr>
+													</table>
+												</td>
+
+												<td width="190" valign="top" align="left">
+													<table border="0" cellpadding="0" cellspacing="0" width="100%" ID="Table7" class="tbCellL">
+														<tr style="BACKGROUND-COLOR:D0D0D0">
+															<td class="label" colwidth="99%"><span class="bold">To</span></td>
+														</tr>
+													</table>
+												</td>
+												<td width="249" valign="top" align="left">
+
+													<table border="0" cellpadding="0" cellspacing="0" width="100%" ID="Table9" class="tbCellL">
+														<tr style="BACKGROUND-COLOR:D0D0D0">
+															<td class="label" colwidth="99%"><span class="bold">Shipment information</span></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+
+												<td width="190" valign="top" align="left">
+													<table border="0" cellpadding="0" cellspacing="0" width="100%">
+														<tr>
+															<td colspan="3"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="5"/></td>
+														</tr>
+														<tr>
+															<td class="bodytext pL5">DELL REFURBISHED PRODUCT</td>
+														</tr>
+
+														<tr>
+															<td class="bodytext pL5">La Vergne, TN  37086</td>
+														</tr>
+														<tr>
+															<td class="bodytext pL5">United States</td>
+														</tr>
+													</table>
+												</td>
+
+												<td width="190" valign="top" align="left" style="BORDER-LEFT: #cccccc 1px solid;">
+													<table border="0" cellpadding="0" cellspacing="0" width="100%" ID="Table16">
+														<tr>
+															<td colspan="3"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="5"/></td>
+														</tr>
+														<tr>
+															<td class="bodytext pL5">STEVEN WHITE</td>
+														</tr>
+
+														<tr>
+															<td class="bodytext pL5">Monroe, WA  98272</td>
+														</tr>
+														<tr>
+															<td class="bodytext pL5">United States</td>
+														</tr>
+													</table>
+												</td>
+
+												<td width="249" valign="top" align="left" style="BORDER-LEFT: #cccccc 1px solid;">
+													<table border="0" cellpadding="0" cellspacing="0" width="100%" ID="Table18">
+														<tr>
+															<td colspan="3"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="5"/></td>
+														</tr>
+														<tr>
+															<td class="pL5">Ship date:
+																	5/8/2008</td>
+														</tr>
+
+														<tr>
+															<td class="pL5">Pieces:
+														1</td>
+														</tr>
+														<tr>
+															<td class="pL5">Total weight: 
+														12 lbs<img src="http://www.dhl-usa.com/images/blank.gif" width="20" height="1"/>
+																<a href="javascript:popWindow('help/TrackHelp.asp?ZoneId=Zone11','450','350','300','200','','no','no','yes','no','DHL - Track Help')" class="lnkContentGrySm" style="text-decoration:underline;">Note on weight</a></td>
+														</tr>
+
+														<tr>
+															<td class="pL5">Ship type:
+																Package</td>
+														</tr>
+														<tr>
+															<td class="pL5"></td>
+														</tr>
+														<tr>
+															<td class="pL5">Shipment reference:
+																G59SZF1</td>
+
+														</tr>
+														<tr>
+															<td class="pL5">Service: 
+														Ground<img src="http://www.dhl-usa.com/images/blank.gif" width="20" height="1"/><a href="http://www.dhl-usa.com/USSvcs/detail/ground.asp?nav=USServices/DDeliveryServices/GDS" class="lnkContentGrySm" style="text-decoration:underline;">More info</a> 
+														</td>
+														</tr>
+														<tr>
+															<td class="pL5">
+																<table border="0" cellpadding="0" cellspacing="0" width="100%" ID="Table20">
+
+																	<tr>
+																		<td valign="top"><span class="bodytext">Special Service(s):</span></td>
+																	</tr>
+																	<tr>
+																		<td align="left">
+																			<table border="0" cellpadding="0" cellspacing="0" width="100%" ID="Table21">
+																				<tr>
+																					<td>- </td>
+
+																					<td>
+																						<span class="redtext">
+																							<span class="bodyText">Signature Required</span><img src="http://www.dhl-usa.com/images/blank.gif" width="20" height="1"/>
+																							<a href="javascript:openWindow('help/TrackHelp.asp?ZoneId=Zone12','425','500','300','200','','no','no','yes','no','DHL - Track Help')" class="lnkContentGrySm" style="text-decoration:underline;">What is this?</a><br/>
+																						</span>
+																					</td>
+																				</tr>
+																			</table>
+
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="1" class="pL5 pB5">Description:
+																G59SZF1</td>
+														</tr>
+
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+				</table>
+				<table border="0" width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td height="1" class="postalYellow"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="2"/></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<table border="0" width="585" cellpadding="0" cellspacing="0">
+		<tr>
+			<td align="left" width="5" class="pT5"><a href="TrackByNbr.asp?nav=TrackBynumber"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9" alt="Track new shipment" border="0"/></a></td>
+			<td align="left" width="451" class="headerArticle pT5"> <a href="TrackByNbr.asp?nav=TrackBynumber">Track new shipment</a></td>
+			<td width="17" class="pT5"><img src="http://www.dhl-usa.com/images/blank.gif" width="17" height="1"/></td>
+			<td width="266" class="pT5"><img src="http://www.dhl-usa.com/images/blank.gif" width="266" height="1"/></td>
+		</tr>
+		<tr>
+
+			<td colspan="4" class="bodytext pT5">Tracking detail provided by DHL: 5/27/2008, 5:39:57 am pt.</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" width="566">
+		<tr>
+			<td rowspan="100"><img src="http://www.dhl-usa.com/images/blank.gif" width="0" height="1"/></td>
+			<td><img src="http://www.dhl-usa.com/images/blank.gif" width="28" height="1"/></td>
+			<td><img src="http://www.dhl-usa.com/images/blank.gif" width="15" height="1"/></td>
+
+			<td><img src="http://www.dhl-usa.com/images/blank.gif" width="10" height="1"/></td>
+			<td><img src="http://www.dhl-usa.com/images/blank.gif" width="508" height="1"/></td>
+			<td rowspan="100"><img src="http://www.dhl-usa.com/images/blank.gif" width="0" height="1"/></td>
+		</tr>
+		<tr>
+			<td height="30px" class="eVert"><img src="http://www.dhl-usa.com/images/blank.gif" height="1"/></td>
+		</tr>
+		<tr>
+			<td colspan="4">
+
+				<table width="580" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="270" valign="top">
+							<table width="270" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td colspan="2" class="mediumGrey" height="1"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="2"/></td>
+								</tr>
+								<tr>
+									<td colspan="2" height="5"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="5"/></td>
+
+								</tr>
+								<tr>
+									<td colspan="2" class="bodytext" style="FONT-SIZE: 18px;">Business is waiting.</td>
+								</tr>
+								<tr>
+									<td colspan="2" height="5"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="5"/></td>
+								</tr>
+								<tr>
+
+									<td colspan="2" class="headerRegular" width="270" style="COLOR:#666666">Across the street and around the globe with One World Yellow Pages.</td>
+								</tr>
+								<tr>
+									<td colspan="2" height="5" align="left" class="bodytext pT5"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9"/>  <a href="http://www.oneworldyellowpages.com/DHL/Landing.aspx?tcode=DHL-TRACK"><span class="headerArticle">Learn more</span></a> </td>
+								</tr>
+							</table>
+						</td>
+
+						<td width="30" valign="top"></td>
+						<td width="270" valign="top">
+							<table width="270" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td colspan="2" class="mediumGrey" height="1"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="2"/></td>
+								</tr>
+								<tr>
+									<td colspan="2" height="5"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="5"/></td>
+								</tr>
+
+								<tr>
+									<td colspan="2" class="bodytext" style="FONT-SIZE: 18px;">Questions?</td>
+								</tr>
+								<tr>
+									<td colspan="2" height="5"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="5"/></td>
+								</tr>
+								<tr>
+									<td colspan="2" class="headerRegular" style="COLOR:#666666">We're here to help!</td>
+
+								</tr>
+								<tr>
+									<td colspan="2" height="5" align="left" class="bodytext pT5"><img src="http://www.dhl-usa.com/images/g_arrow_red.gif" width="5" height="9"/>  <a href="http://www.dhl-usa.com/custserv/contactus.asp?nav=ContactUs"><span class="headerArticle">Contact DHL</span></a> </td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="30"/></td>
+		</tr>
+		<tr>
+			<td colspan="4" class="greyText" valign="top">
+					You are authorized to use DHL tracking systems solely to track shipments tendered by or for you to DHL. Any other use of DHL tracking systems and information is strictly prohibited.
+				</td>
+
+		</tr>
+		<tr>
+			<td colspan="4"><img src="http://www.dhl-usa.com/images/blank.gif" width="1" height="18"/></td>
+		</tr>
+	</table>
+	<input type="hidden" name="hdnPostType"/>
+	<input type="hidden" name="hdnRefPage" value="0"/>
+	<input type="hidden" name="hdnOkTotal" value="1"/>
+	<input type="hidden" name="hdnErrTotal" value="0"/>
+
+	<input type="hidden" name="hdnTrackID" value=""/>
+	<input type="hidden" name="hdnPageNbr" value="1"/>
+	<input type="hidden" name="hdnXMLResponse_01" value="&lt;Track version=&quot;1.1&quot; action=&quot;Response&quot;&gt;&lt;Search&gt;&lt;ByTrackingNbr&gt;&lt;TrackingNbr&gt;12991078030&lt;/TrackingNbr&gt;&lt;/ByTrackingNbr&gt;&lt;/Search&gt;&lt;TrackShipments&gt;&lt;Shipment result_id=&quot;1&quot;&gt;&lt;TrackingNbr&gt;12991078030&lt;/TrackingNbr&gt;
+			&lt;Result&gt;&lt;Code&gt;0&lt;/Code&gt;
+				&lt;Desc&gt;Waybill found.&lt;/Desc&gt;
+			&lt;/Result&gt;
+			&lt;ShipmentType&gt;&lt;Code&gt;2&lt;/Code&gt;
+				&lt;Desc&gt;Package&lt;/Desc&gt;
+			&lt;/ShipmentType&gt;
+			&lt;Service&gt;&lt;Code&gt;T&lt;/Code&gt;
+				&lt;Desc&gt;Ground&lt;/Desc&gt;
+			&lt;/Service&gt;
+			&lt;Origin&gt;&lt;Station&gt;BNA&lt;/Station&gt;
+			&lt;/Origin&gt;
+			&lt;OriginDescr&gt;&lt;Location&gt;&lt;!"/>
+	<input type="hidden" name="hdnXMLResponse_02" value="[CDATA[LA VERGNE, TN]]&gt;&lt;/Location&gt;
+			&lt;/OriginDescr&gt;
+			&lt;Destination&gt;&lt;Station&gt;TIW&lt;/Station&gt;
+			&lt;/Destination&gt;
+			&lt;DestinationDescr&gt;&lt;Location&gt;&lt;![CDATA[MONROE, WA]]&gt;&lt;/Location&gt;
+			&lt;/DestinationDescr&gt;
+			&lt;Pieces&gt;1&lt;/Pieces&gt;
+			&lt;Weight&gt;12&lt;/Weight&gt;
+			&lt;ShipperReference&gt;&lt;![CDATA[G59SZF1]]&gt;&lt;/ShipperReference&gt;
+			&lt;SpecialServices&gt;&lt;SpecialService&gt;&lt;Code&gt;SIG&lt;/Code&gt;
+					&lt;Desc&gt;Signature Required&lt;/Desc&gt;
+				&lt;/SpecialService&gt;
+			&lt;/SpecialServices&gt;
+			&lt;ContentsDesc&gt;&lt;![CDATA[G59SZF1]]&gt;&lt;/ContentsDesc&gt;
+"/>
+	<input type="hidden" name="hdnXMLResponse_03" value="			&lt;Sender&gt;&lt;CompanyName&gt;&lt;![CDATA[DELL REFURBISHED PRODUCT]]&gt;&lt;/CompanyName&gt;
+				&lt;City&gt;&lt;![CDATA[LA VERGNE]]&gt;&lt;/City&gt;
+				&lt;State&gt;TN&lt;/State&gt;
+				&lt;PostalCode&gt;37086&lt;/PostalCode&gt;
+				&lt;Country&gt;&lt;![CDATA[USA]]&gt;&lt;/Country&gt;
+			&lt;/Sender&gt;
+			&lt;Receiver&gt;&lt;CompanyName&gt;&lt;![CDATA[STEVEN WHITE]]&gt;&lt;/CompanyName&gt;
+				&lt;City&gt;&lt;![CDATA[MONROE]]&gt;&lt;/City&gt;
+				&lt;State&gt;WA&lt;/State&gt;
+				&lt;PostalCode&gt;98272&lt;/PostalCode&gt;
+				&lt;Country&gt;&lt;![CDATA[USA]]&gt;&lt;/Country&gt;
+			&lt;/Receiver&gt;
+			&lt;Pickup&gt;&lt;Date&gt;2008-05-08&lt;/Date&gt;
+				&lt;Time&gt;00:01&lt;/Tim"/>
+	<input type="hidden" name="hdnXMLResponse_04" value="e&gt;
+			&lt;/Pickup&gt;
+			&lt;EstDeliveryDate&gt;2008-05-14&lt;/EstDeliveryDate&gt;
+			&lt;Delivery&gt;&lt;Date&gt;2008-05-12&lt;/Date&gt;
+				&lt;Time&gt;12:19&lt;/Time&gt;
+				&lt;Signatory&gt;&lt;![CDATA[J PACKARD]]&gt;&lt;/Signatory&gt;
+				&lt;Location&gt;&lt;Code&gt;RC&lt;/Code&gt;
+					&lt;Desc&gt;Receptionist&lt;/Desc&gt;
+				&lt;/Location&gt;
+			&lt;/Delivery&gt;
+			&lt;StatusImage&gt;delivered.gif&lt;/StatusImage&gt;
+			&lt;TrackingHistory&gt;&lt;Status sequence_nbr=&quot;10&quot; final_delivery=&quot;true&quot;&gt;&lt;Disposition&gt;OK&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;105&quot;&gt;Shipment delivered.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-12&lt;/"/>
+	<input type="hidden" name="hdnXMLResponse_05" value="Date&gt;
+					&lt;Time&gt;12:19&lt;/Time&gt;
+					&lt;Location abf_station_id=&quot;UNK&quot;&gt;&lt;City&gt;Bothell&lt;/City&gt;
+						&lt;State&gt;WA&lt;/State&gt;
+					&lt;/Location&gt;
+					&lt;EntryStation&gt;UNK&lt;/EntryStation&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;9&quot;&gt;&lt;Disposition&gt;WC&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;117&quot;&gt;With delivery courier.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-12&lt;/Date&gt;
+					&lt;Time&gt;09:21&lt;/Time&gt;
+					&lt;Location abf_station_id=&quot;UNK&quot;&gt;&lt;City&gt;Bothell&lt;/City&gt;
+						&lt;State&gt;WA&lt;/State&gt;
+					&lt;/Location&gt;
+					&lt;EntryStation&gt;UNK&lt;/EntryStation&gt;"/>
+	<input type="hidden" name="hdnXMLResponse_06" value="
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;8&quot;&gt;&lt;Disposition&gt;AR&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;100&quot;&gt;Arrived at DHL facility.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-12&lt;/Date&gt;
+					&lt;Time&gt;07:08&lt;/Time&gt;
+					&lt;Location abf_station_id=&quot;UNK&quot;&gt;&lt;City&gt;Bothell&lt;/City&gt;
+						&lt;State&gt;WA&lt;/State&gt;
+					&lt;/Location&gt;
+					&lt;EntryStation&gt;UNK&lt;/EntryStation&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;7&quot;&gt;&lt;Disposition&gt;DF&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;636&quot;&gt;Depart Facility&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-12&lt;/Date&gt;
+					"/>
+	<input type="hidden" name="hdnXMLResponse_07" value="&lt;Time&gt;03:02&lt;/Time&gt;
+					&lt;Location&gt;&lt;City&gt;Chehalis Regional Hub&lt;/City&gt;
+						&lt;State&gt;WA&lt;/State&gt;
+					&lt;/Location&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;6&quot;&gt;&lt;Disposition&gt;PL&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;639&quot;&gt;Processed at DHL Location.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-11&lt;/Date&gt;
+					&lt;Time&gt;22:21&lt;/Time&gt;
+					&lt;Location&gt;&lt;City&gt;Chehalis Regional Hub&lt;/City&gt;
+						&lt;State&gt;WA&lt;/State&gt;
+					&lt;/Location&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;5&quot;&gt;&lt;Disposition&gt;TR&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;62"/>
+
+	<input type="hidden" name="hdnXMLResponse_08" value="3&quot;&gt;In transit.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-11&lt;/Date&gt;
+					&lt;Time&gt;22:13&lt;/Time&gt;
+					&lt;Location abf_station_id=&quot;UNK&quot;&gt;&lt;City&gt;Chehalis Regional Hub&lt;/City&gt;
+						&lt;State&gt;WA&lt;/State&gt;
+					&lt;/Location&gt;
+					&lt;EntryStation&gt;UNK&lt;/EntryStation&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;4&quot;&gt;&lt;Disposition&gt;AF&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;600&quot;&gt;Transit through DHL facility&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-10&lt;/Date&gt;
+					&lt;Time&gt;04:48&lt;/Time&gt;
+					&lt;Location&gt;&lt;City&gt;Chehalis Regional Hub&lt;/City&gt;
+						&lt;State&gt;WA"/>
+	<input type="hidden" name="hdnXMLResponse_09" value="&lt;/State&gt;
+					&lt;/Location&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;3&quot;&gt;&lt;Disposition&gt;DF&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;636&quot;&gt;Depart Facility&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-09&lt;/Date&gt;
+					&lt;Time&gt;16:03&lt;/Time&gt;
+					&lt;Location&gt;&lt;City&gt;Wilmington&lt;/City&gt;
+						&lt;State&gt;OH&lt;/State&gt;
+					&lt;/Location&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;2&quot;&gt;&lt;Disposition&gt;PL&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;639&quot;&gt;Processed at DHL Location.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-09&lt;/Date&gt;
+					&lt;Time&gt;12:14&lt;/Time&gt;
+					&lt;Loc"/>
+	<input type="hidden" name="hdnXMLResponse_10" value="ation&gt;&lt;City&gt;Wilmington&lt;/City&gt;
+						&lt;State&gt;OH&lt;/State&gt;
+					&lt;/Location&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;1&quot;&gt;&lt;Disposition&gt;TR&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;623&quot;&gt;In transit.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-09&lt;/Date&gt;
+					&lt;Time&gt;11:51&lt;/Time&gt;
+					&lt;Location abf_station_id=&quot;UNK&quot;&gt;&lt;City&gt;Wilmington&lt;/City&gt;
+						&lt;State&gt;OH&lt;/State&gt;
+					&lt;/Location&gt;
+					&lt;EntryStation&gt;UNK&lt;/EntryStation&gt;
+				&lt;/Status&gt;
+			&lt;/TrackingHistory&gt;
+			&lt;position&gt;1&lt;/position&gt;&lt;/Shipment&gt;
+	&lt;/TrackShipments&gt;&lt;/Track&gt;
+"/>
+	<input type="hidden" name="hdnEmailId" value=""/>
+	<input type="hidden" name="hdnResponseXML_011" value="&lt;Track version=&quot;1.1&quot; action=&quot;Response&quot;&gt;&lt;Search&gt;&lt;ByTrackingNbr&gt;&lt;TrackingNbr&gt;12991078030&lt;/TrackingNbr&gt;&lt;/ByTrackingNbr&gt;&lt;/Search&gt;&lt;TrackShipments&gt;&lt;Shipment result_id=&quot;1&quot;&gt;&lt;TrackingNbr&gt;12991078030&lt;/TrackingNbr&gt;
+			&lt;Result&gt;&lt;Code&gt;0&lt;/Code&gt;
+				&lt;Desc&gt;Waybill found.&lt;/Desc&gt;
+			&lt;/Result&gt;
+			&lt;ShipmentType&gt;&lt;Code&gt;2&lt;/Code&gt;
+				&lt;Desc&gt;Package&lt;/Desc&gt;
+			&lt;/ShipmentType&gt;
+			&lt;Service&gt;&lt;Code&gt;T&lt;/Code&gt;
+				&lt;Desc&gt;Ground&lt;/Desc&gt;
+			&lt;/Service&gt;
+			&lt;Origin&gt;&lt;Station&gt;BNA&lt;/Station&gt;
+			&lt;/Origin&gt;
+			&lt;OriginDescr&gt;&lt;Location&gt;&lt;!"/>
+	<input type="hidden" name="hdnResponseXML_021" value="[CDATA[LA VERGNE, TN]]&gt;&lt;/Location&gt;
+			&lt;/OriginDescr&gt;
+			&lt;Destination&gt;&lt;Station&gt;TIW&lt;/Station&gt;
+			&lt;/Destination&gt;
+			&lt;DestinationDescr&gt;&lt;Location&gt;&lt;![CDATA[MONROE, WA]]&gt;&lt;/Location&gt;
+			&lt;/DestinationDescr&gt;
+			&lt;Pieces&gt;1&lt;/Pieces&gt;
+			&lt;Weight&gt;12&lt;/Weight&gt;
+			&lt;ShipperReference&gt;&lt;![CDATA[G59SZF1]]&gt;&lt;/ShipperReference&gt;
+			&lt;SpecialServices&gt;&lt;SpecialService&gt;&lt;Code&gt;SIG&lt;/Code&gt;
+					&lt;Desc&gt;Signature Required&lt;/Desc&gt;
+				&lt;/SpecialService&gt;
+			&lt;/SpecialServices&gt;
+			&lt;ContentsDesc&gt;&lt;![CDATA[G59SZF1]]&gt;&lt;/ContentsDesc&gt;
+"/>
+	<input type="hidden" name="hdnResponseXML_031" value="			&lt;Sender&gt;&lt;CompanyName&gt;&lt;![CDATA[DELL REFURBISHED PRODUCT]]&gt;&lt;/CompanyName&gt;
+				&lt;City&gt;&lt;![CDATA[LA VERGNE]]&gt;&lt;/City&gt;
+				&lt;State&gt;TN&lt;/State&gt;
+				&lt;PostalCode&gt;37086&lt;/PostalCode&gt;
+				&lt;Country&gt;&lt;![CDATA[USA]]&gt;&lt;/Country&gt;
+			&lt;/Sender&gt;
+			&lt;Receiver&gt;&lt;CompanyName&gt;&lt;![CDATA[STEVEN WHITE]]&gt;&lt;/CompanyName&gt;
+				&lt;City&gt;&lt;![CDATA[MONROE]]&gt;&lt;/City&gt;
+				&lt;State&gt;WA&lt;/State&gt;
+				&lt;PostalCode&gt;98272&lt;/PostalCode&gt;
+				&lt;Country&gt;&lt;![CDATA[USA]]&gt;&lt;/Country&gt;
+			&lt;/Receiver&gt;
+			&lt;Pickup&gt;&lt;Date&gt;2008-05-08&lt;/Date&gt;
+				&lt;Time&gt;00:01&lt;/Tim"/>
+	<input type="hidden" name="hdnResponseXML_041" value="e&gt;
+			&lt;/Pickup&gt;
+			&lt;EstDeliveryDate&gt;2008-05-14&lt;/EstDeliveryDate&gt;
+			&lt;Delivery&gt;&lt;Date&gt;2008-05-12&lt;/Date&gt;
+				&lt;Time&gt;12:19&lt;/Time&gt;
+				&lt;Signatory&gt;&lt;![CDATA[J PACKARD]]&gt;&lt;/Signatory&gt;
+				&lt;Location&gt;&lt;Code&gt;RC&lt;/Code&gt;
+					&lt;Desc&gt;Receptionist&lt;/Desc&gt;
+				&lt;/Location&gt;
+			&lt;/Delivery&gt;
+			&lt;StatusImage&gt;delivered.gif&lt;/StatusImage&gt;
+			&lt;TrackingHistory&gt;&lt;Status sequence_nbr=&quot;10&quot; final_delivery=&quot;true&quot;&gt;&lt;Disposition&gt;OK&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;105&quot;&gt;Shipment delivered.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-12&lt;/"/>
+	<input type="hidden" name="hdnResponseXML_051" value="Date&gt;
+					&lt;Time&gt;12:19&lt;/Time&gt;
+					&lt;Location abf_station_id=&quot;UNK&quot;&gt;&lt;City&gt;Bothell&lt;/City&gt;
+						&lt;State&gt;WA&lt;/State&gt;
+					&lt;/Location&gt;
+					&lt;EntryStation&gt;UNK&lt;/EntryStation&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;9&quot;&gt;&lt;Disposition&gt;WC&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;117&quot;&gt;With delivery courier.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-12&lt;/Date&gt;
+					&lt;Time&gt;09:21&lt;/Time&gt;
+					&lt;Location abf_station_id=&quot;UNK&quot;&gt;&lt;City&gt;Bothell&lt;/City&gt;
+						&lt;State&gt;WA&lt;/State&gt;
+					&lt;/Location&gt;
+					&lt;EntryStation&gt;UNK&lt;/EntryStation&gt;"/>
+
+	<input type="hidden" name="hdnResponseXML_061" value="
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;8&quot;&gt;&lt;Disposition&gt;AR&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;100&quot;&gt;Arrived at DHL facility.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-12&lt;/Date&gt;
+					&lt;Time&gt;07:08&lt;/Time&gt;
+					&lt;Location abf_station_id=&quot;UNK&quot;&gt;&lt;City&gt;Bothell&lt;/City&gt;
+						&lt;State&gt;WA&lt;/State&gt;
+					&lt;/Location&gt;
+					&lt;EntryStation&gt;UNK&lt;/EntryStation&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;7&quot;&gt;&lt;Disposition&gt;DF&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;636&quot;&gt;Depart Facility&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-12&lt;/Date&gt;
+					"/>
+	<input type="hidden" name="hdnResponseXML_071" value="&lt;Time&gt;03:02&lt;/Time&gt;
+					&lt;Location&gt;&lt;City&gt;Chehalis Regional Hub&lt;/City&gt;
+						&lt;State&gt;WA&lt;/State&gt;
+					&lt;/Location&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;6&quot;&gt;&lt;Disposition&gt;PL&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;639&quot;&gt;Processed at DHL Location.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-11&lt;/Date&gt;
+					&lt;Time&gt;22:21&lt;/Time&gt;
+					&lt;Location&gt;&lt;City&gt;Chehalis Regional Hub&lt;/City&gt;
+						&lt;State&gt;WA&lt;/State&gt;
+					&lt;/Location&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;5&quot;&gt;&lt;Disposition&gt;TR&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;62"/>
+	<input type="hidden" name="hdnResponseXML_081" value="3&quot;&gt;In transit.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-11&lt;/Date&gt;
+					&lt;Time&gt;22:13&lt;/Time&gt;
+					&lt;Location abf_station_id=&quot;UNK&quot;&gt;&lt;City&gt;Chehalis Regional Hub&lt;/City&gt;
+						&lt;State&gt;WA&lt;/State&gt;
+					&lt;/Location&gt;
+					&lt;EntryStation&gt;UNK&lt;/EntryStation&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;4&quot;&gt;&lt;Disposition&gt;AF&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;600&quot;&gt;Transit through DHL facility&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-10&lt;/Date&gt;
+					&lt;Time&gt;04:48&lt;/Time&gt;
+					&lt;Location&gt;&lt;City&gt;Chehalis Regional Hub&lt;/City&gt;
+						&lt;State&gt;WA"/>
+	<input type="hidden" name="hdnResponseXML_091" value="&lt;/State&gt;
+					&lt;/Location&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;3&quot;&gt;&lt;Disposition&gt;DF&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;636&quot;&gt;Depart Facility&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-09&lt;/Date&gt;
+					&lt;Time&gt;16:03&lt;/Time&gt;
+					&lt;Location&gt;&lt;City&gt;Wilmington&lt;/City&gt;
+						&lt;State&gt;OH&lt;/State&gt;
+					&lt;/Location&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;2&quot;&gt;&lt;Disposition&gt;PL&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;639&quot;&gt;Processed at DHL Location.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-09&lt;/Date&gt;
+					&lt;Time&gt;12:14&lt;/Time&gt;
+					&lt;Loc"/>
+	<input type="hidden" name="hdnResponseXML_101" value="ation&gt;&lt;City&gt;Wilmington&lt;/City&gt;
+						&lt;State&gt;OH&lt;/State&gt;
+					&lt;/Location&gt;
+				&lt;/Status&gt;
+				&lt;Status sequence_nbr=&quot;1&quot;&gt;&lt;Disposition&gt;TR&lt;/Disposition&gt;
+					&lt;StatusDesc id=&quot;623&quot;&gt;In transit.&lt;/StatusDesc&gt;
+					&lt;Date&gt;2008-05-09&lt;/Date&gt;
+					&lt;Time&gt;11:51&lt;/Time&gt;
+					&lt;Location abf_station_id=&quot;UNK&quot;&gt;&lt;City&gt;Wilmington&lt;/City&gt;
+						&lt;State&gt;OH&lt;/State&gt;
+					&lt;/Location&gt;
+					&lt;EntryStation&gt;UNK&lt;/EntryStation&gt;
+				&lt;/Status&gt;
+			&lt;/TrackingHistory&gt;
+			&lt;position&gt;1&lt;/position&gt;&lt;/Shipment&gt;
+	&lt;/TrackShipments&gt;&lt;/Track&gt;
+"/>
+</form>
+
+		<form  id="frmPrint" name="frmPrint" action="Track_PrintRslts.asp" target="myWindow" method="post">
+		<input type="hidden" name="hdnResponse_01"	value=""/>
+		<input type="hidden" name="hdnResponse_02"	value=""/>
+
+		<input type="hidden" name="hdnResponse_03"	value=""/>
+		<input type="hidden" name="hdnResponse_04"	value=""/>
+		<input type="hidden" name="hdnResponse_05"	value=""/>
+		<input type="hidden" name="hdnResponse_06"	value=""/>
+		<input type="hidden" name="hdnResponse_07"	value=""/>
+		<input type="hidden" name="hdnResponse_08"	value=""/>
+		<input type="hidden" name="hdnResponse_09"	value=""/>
+		<input type="hidden" name="hdnResponse_10"	value=""/>
+		</form>
+
+		</td>
+			<!-- Content ends here -->
+			<td width="17"><img src="http://www.dhl-usa.com/images/blank.gif" width="17" height="1"></td>
+		</tr>
+	</table>
+	<!-- END Body -->
+
+	<!-- START Footer Task -->
+	
+	<table border="0" cellspacing="0" cellpadding="0" width="773">
+
+	
+		<tr>
+		<td width="168" bgcolor="#ffcc00"><img src="http://www.dhl-usa.com/images/spacer.gif" width="168" height="45"></td>
+		<td width="10"><img src="http://www.dhl-usa.com/images/spacer.gif" width="10" height="45" alt></td>
+		<td width="578"><img src="http://www.dhl-usa.com/images/spacer.gif" width="1" height="45" alt></td>
+		<td width="17"><img src="http://www.dhl-usa.com/images/spacer.gif" width="1" height="45" alt></td>
+		</tr>
+		
+		<!--<tr>			<td width="168" bgcolor="#ffcc00"><img src="http://www.dhl-usa.com/images/spacer.gif" width="1" height="45" alt></td>			<td width="10"><img src="http://www.dhl-usa.com/images/spacer.gif" width="10" height="45" alt></td>			<td width="578"><img src="http://www.dhl-usa.com/images/spacer.gif" width="578" height="45" alt></td>			<td width="17"><img src="http://www.dhl-usa.com/images/spacer.gif" width="17" height="45" alt></td>		</tr>-->
+		
+		<tr>
+			
+			<td width="168" bgcolor="#ffcc00"><img src="http://www.dhl-usa.com/images/spacer.gif" width="168" height="1"></td>
+
+			<td width="10"><img src="http://www.dhl-usa.com/images/spacer.gif" width="10" alt></td>
+			
+			<td width="578"><div class="footer">
+	    
+    <a href="http://www.dhl.com/publish/g0/en.high.html?main_index=yes" onclick="dcsMultiTrack('DCS.dcsuri', '/navandlinks/dhlglobalbottom.asp', 'WT.ti', 'Nav and Links: DHL Global Bottom');" color="#cc0000" onMouseOver="window.status='DHL Global';return true;" onMouseOut="window.status='';return true;">DHL Global</a>&nbsp; |
+    &nbsp;<a href="http://www.dhl-usa.com/About/AboutusHome.asp?nav=AboutDHL" color="#cc0000" onMouseOver="window.status='About DHL';return true;" onMouseOut="window.status='';return true;">About DHL</a>&nbsp; |
+    &nbsp;<a href="http://www.dhl-usa.com/company/pressroom.asp?nav=PressRoom" color="#cc0000" onMouseOver="window.status='Newsroom';return true;" onMouseOut="window.status='';return true;">Newsroom</a>&nbsp; |
+    &nbsp;<a href="http://www.dhl-usa.com/CustServ/ContactUs.asp?nav=ContactUs" onclick="dcsMultiTrack('DCS.dcsuri', '/navandlinks/contactusbottom.asp', 'WT.ti', 'Nav and Links: Contact us Bottom');" color="#cc0000" onMouseOver="window.status='Contact';return true;" onMouseOut="window.status='';return true;">Contact</a>&nbsp; |
+    &nbsp;<a href="http://www.dhl-usa.com/About/Sitemap.asp?nav=Sitemap" onclick="dcsMultiTrack('DCS.dcsuri', '/navandlinks/sitemapbottom.asp', 'WT.ti', 'Nav and Links: Sitemap Bottom');" color="#cc0000" onMouseOver="window.status='Sitemap';return true;" onMouseOut="window.status='';return true;">Sitemap</a>&nbsp; |
+    &nbsp;<a href="http://www.dhl-usa.com/About/Privacy.asp?nav=Privacy" color="#cc0000" onMouseOver="window.status='Privacy Policy';return true;" onMouseOut="window.status='';return true;">Privacy Policy</a>
+
+    <br>
+    
+	<a href="http://www.dhl-usa.com/about/copyright.asp?nav=Copyright" style="color:#000000;" onMouseOver="window.status='Copyright';return true;" onMouseOut="window.status='';return true;">Copyright © 2008 DHL International, Ltd. All Rights Reserved.</a>
+	</div></td>
+			<td width="17"><img src="http://www.dhl-usa.com/images/blank.gif" width="17" height="1"></td>
+		</tr>
+		<tr>
+			
+			<td width="168" bgcolor="#ffcc00"><img src="http://www.dhl-usa.com/images/spacer.gif" width="1" height="5" alt></td>
+			<td width="10"><img src="http://www.dhl-usa.com/images/spacer.gif" width="10" height="5" alt></td>
+
+			
+			<td width="578"><img src="http://www.dhl-usa.com/images/spacer.gif" width="578" height="5" alt></td>
+			<td width="17"><img src="http://www.dhl-usa.com/images/spacer.gif" width="17" height="5" alt></td>
+		</tr>
+		
+	</table>
+	<!-- END Footer Task -->
+
+	</body>
+	</html>
+	

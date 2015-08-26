@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<TrackResponse>
+	<TrackInfo ID="9101010521297800170523">
+		<TrackSummary>Your item was delivered at 9:59 am on April 25, 2008 in RICHMOND, VA 23233.</TrackSummary>
+		<TrackDetail>Arrival at Unit, April 25, 2008, 6:28 am, RICHMOND, VA 23233</TrackDetail>
+		<TrackDetail>Processed, April 25, 2008, 12:07 am, RICHMOND, VA 23232</TrackDetail>
+		<TrackDetail>Processed, April 23, 2008, 10:14 pm, LAS VEGAS, NV 89119</TrackDetail>
+		<TrackDetail>Electronic Shipping Info Received, April 16, 2008</TrackDetail>
+	</TrackInfo>
+</TrackResponse>

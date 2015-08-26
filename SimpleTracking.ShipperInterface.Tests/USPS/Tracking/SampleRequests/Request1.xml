@@ -1,0 +1,3 @@
+﻿<TrackRequest PASSWORD="testPass" USERID="testUserName">
+	<TrackID ID="testTrackingNumber" />
+</TrackRequest>

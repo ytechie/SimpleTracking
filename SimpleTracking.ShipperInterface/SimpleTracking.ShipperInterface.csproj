@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{864A1FA8-8C5C-4D03-A60D-302727243ACD}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SimpleTracking.ShipperInterface</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SimpleTracking.ShipperInterface</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.6.1\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.OData.5.6.1\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WindowsAzure.Storage.3.0.0.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Spatial, Version=5.6.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.6.1\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\CheckDigits.cs" />
+    <Compile Include="Common\HashFunctions.cs" />
+    <Compile Include="Common\Http\ContextUrlResolver.cs" />
+    <Compile Include="Common\Http\IUrlResolver.cs" />
+    <Compile Include="Common\Http\PackageTrackrRetryPostUtility.cs" />
+    <Compile Include="Common\IThreadSleeper.cs" />
+    <Compile Include="Common\Location.cs" />
+    <Compile Include="Common\ThreadSleeper.cs" />
+    <Compile Include="DataAccess\TrackingDataEntity.cs" />
+    <Compile Include="Geocoding\CityRecord.cs" />
+    <Compile Include="Geocoding\GeocodeDb.cs" />
+    <Compile Include="Geocoding\IGeocodeDb.cs" />
+    <Compile Include="Tracking\GeocodingTracker.cs" />
+    <Compile Include="Tracking\LocationParser.cs" />
+    <Compile Include="Tracking\LoggingTracker.cs" />
+    <Compile Include="Tracking\TrackingNumberStandardizerTracker.cs" />
+    <Compile Include="Tracking\TrackingNumberUtilities.cs" />
+    <Compile Include="Dhl\Tracking\DhlScreenScrapeTracker.cs" />
+    <Compile Include="Dhl\Tracking\DhlTracker.cs" />
+    <Compile Include="Dhl\Tracking\ScreenScrapeResponse.cs" />
+    <Compile Include="Dhl\Tracking\TrackingRequest.cs" />
+    <Compile Include="Dhl\Tracking\TrackingResponse.cs" />
+    <Compile Include="FedEx\ITrackService.cs" />
+    <Compile Include="FedEx\TrackService.cs" />
+    <Compile Include="FedEx\Tracking\AddressExtensions.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Tracking\EmptyTrackingNumberTracker.cs" />
+    <Compile Include="Tracking\ErrorTrackingData.cs" />
+    <Compile Include="Tracking\MultiTracker.cs" />
+    <Compile Include="Tracking\ResponseParseException.cs" />
+    <Compile Include="Tracking\Rss\IRssBodyFormatter.cs" />
+    <Compile Include="Tracking\Rss\SimpleTrackingRssBodyFormatter.cs" />
+    <Compile Include="Tracking\Simulation\SimulationTracker.cs" />
+    <Compile Include="Tracking\Rss\TrackingDataToRss.cs" />
+    <Compile Include="Common\Http\IWebPoster.cs" />
+    <Compile Include="Common\Http\PostUtility.cs" />
+    <Compile Include="Tracking\ITracker.cs" />
+    <Compile Include="FedEx\Tracking\FedexTracker.cs" />
+    <Compile Include="PackageTracker.cs" />
+    <Compile Include="ShipperInterfaceException.cs" />
+    <Compile Include="Tracking\CacheTracker.cs" />
+    <Compile Include="Tracking\ErrorHandlerTracker.cs" />
+    <Compile Include="Tracking\IActivityUnit.cs" />
+    <Compile Include="Tracking\TrackingException.cs" />
+    <Compile Include="Ups\AccessRequest.cs" />
+    <Compile Include="Ups\Tracking\RequestComponents\Request.cs" />
+    <Compile Include="Ups\Tracking\RequestComponents\TransactionReference.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\ActivityLocation.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\ActivityStatus.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\Address.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\Package.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\PackageActivity.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\PackageMessage.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\PackageWeight.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\ReferenceNumber.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\Response.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\Service.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\Shipment.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\Shipper.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\ShipTo.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\StatusCode.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\StatusType.cs" />
+    <Compile Include="Ups\Tracking\ResponseComponents\UnitOfMeasurement.cs" />
+    <Compile Include="Ups\Tracking\TrackingRequest.cs" />
+    <Compile Include="Ups\Tracking\TrackingResponse.cs" />
+    <Compile Include="Ups\Tracking\UpsFormatConversions.cs" />
+    <Compile Include="Ups\Tracking\UpsTracker.cs" />
+    <Compile Include="Ups\UpsFormatConversions.cs" />
+    <Compile Include="Usps\Tracking\TrackingRequest.cs" />
+    <Compile Include="Usps\Tracking\TrackingResponse.cs" />
+    <Compile Include="Usps\Tracking\UspsTracker.cs" />
+    <Compile Include="Web References\FedexTrackWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Usps\Tracking\RequestTemplate.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dhl\Tracking\RequestComponents\TrackingRequestTemplate.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="FedEx\TrackServiceDefinitions.wsdl" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FedexTrackWebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FedexTrackWebService\SignatureProofOfDeliveryFaxReply.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FedexTrackWebService\SignatureProofOfDeliveryLetterReply.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FedexTrackWebService\TrackNotificationReply.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FedexTrackWebService\TrackReply.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FedexTrackWebService\TrackServiceDefinitions.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="C:\Users\Jason\Documents\GitHub\SimpleTracking\SimpleTracking.ShipperInterface\FedEx\TrackServiceDefinitions.wsdl">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\FedexTrackWebService\</RelPath>
+      <UpdateFromURL>C:\Users\Jason\Documents\GitHub\SimpleTracking\SimpleTracking.ShipperInterface\FedEx\TrackServiceDefinitions.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SimpleTracking_ShipperInterface_FedexTrackWebService_TrackService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleTracking.ShipperInterface.ClientServerShared\SimpleTracking.ShipperInterface.ClientServerShared.csproj">
+      <Project>{41716650-2249-4d85-b6f0-98284ef13556}</Project>
+      <Name>SimpleTracking.ShipperInterface.ClientServerShared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+</Project>

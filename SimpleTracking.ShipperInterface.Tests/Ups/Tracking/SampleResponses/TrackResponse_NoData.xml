@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+<TrackResponse>
+	<Response>
+		<TransactionReference></TransactionReference>
+		<ResponseStatusCode>0</ResponseStatusCode>
+		<ResponseStatusDescription>Failure</ResponseStatusDescription>
+		<Error>
+			<ErrorSeverity>Hard</ErrorSeverity>
+			<ErrorCode>151044</ErrorCode>
+			<ErrorDescription>No tracking information available</ErrorDescription>
+		</Error>
+	</Response>
+</TrackResponse>
