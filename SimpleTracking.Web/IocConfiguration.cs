@@ -17,7 +17,7 @@ namespace SimpleTracking.Web
             {
                 x.For<IWebPoster>().Use<PostUtility>();
                 x.For<ITracker>().Use<PackageTracker>();
-                x.For<IGeocodeDb>().Use<GeocodeDb>().Ctor<string>(geocodeDbConnectionString).Is(geocodingDbConnectionString);
+                x.For<IGeocodeDb>().Use<GeocodeDb>().Ctor<string>("geocodeDbConnectionString").Is(geocodingDbConnectionString);
             });
         }
     }

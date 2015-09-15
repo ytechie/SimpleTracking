@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Microsoft.WindowsAzure.Storage.Table;
 using SimpleTracking.ShipperInterface.Geocoding;
+using System.Web.Configuration;
 
 namespace SimpleTracking.Web.Controllers
 {
@@ -30,7 +31,7 @@ namespace SimpleTracking.Web.Controllers
                 using (var sr = new StreamReader(hpf.InputStream))
                 {
                     var batch = new List<CityRecord>();
-                    var db = new GeocodeDb();
+                    var db = new GeocodeDb(WebConfigurationManager.AppSettings["GeocodeDbConnectionString"]);
 
                     while (!sr.EndOfStream)
                     {
