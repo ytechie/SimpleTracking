@@ -9,7 +9,6 @@ namespace SimpleTracking.Web
     {
         public void Configuration(IAppBuilder app)
         {
-            app.ConfigureAuth();
         }
     }
 }

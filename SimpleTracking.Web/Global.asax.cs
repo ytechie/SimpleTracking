@@ -1,15 +1,7 @@
-﻿using SimpleTracking.Web.Identity;
-using StructureMap;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
+﻿using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using SimpleTracking.ShipperInterface.Tracking;
-using SimpleTracking.ShipperInterface.Tracking.Simulation;
 
 namespace SimpleTracking.Web
 {
@@ -33,9 +25,6 @@ namespace SimpleTracking.Web
             ViewEngines.Engines.Add(new RazorViewEngine());
 
             IocConfiguration.Configure();
-
-            //Create identity tables if needed
-            ApplicationUserManager.StartupAsync();
         }
     }
 }
