@@ -1,3 +1,0 @@
-﻿<TrackRequest PASSWORD="{password}" USERID="{userName}">
-	<TrackID ID="{trackingNumber}" />
-</TrackRequest>
