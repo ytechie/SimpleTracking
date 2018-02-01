@@ -1,13 +1,22 @@
 ﻿<Properties StartupConfiguration="{93EA17ED-106E-4C2E-87FD-142676EEC614}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Simpletracking/Simpletracking.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Simpletracking/bundleconfig.json">
     <Files>
-      <File FileName="Simpletracking/Dockerfile" Line="5" Column="12" />
       <File FileName="Simpletracking/Startup.cs" Line="1" Column="1" />
       <File FileName="Simpletracking/Program.cs" Line="23" Column="40" />
       <File FileName="Simpletracking/appsettings.json" Line="1" Column="1" />
       <File FileName="Simpletracking/appsettings.Development.json" Line="1" Column="1" />
       <File FileName="Simpletracking/bundleconfig.json" Line="1" Column="1" />
       <File FileName="Simpletracking/Simpletracking.csproj" Line="1" Column="1" />
+      <File FileName="SimpleTracking.ShipperInterface/Geocoding/CityRecord.cs" Line="5" Column="24" />
+      <File FileName="SimpleTracking.ShipperInterface/Geocoding/GeocodeDb.cs" Line="16" Column="29" />
+      <File FileName="SimpleTracking.ShipperInterface/Geocoding/IGeocodeDb.cs" Line="1" Column="1" />
+      <File FileName="SimpleTracking.ShipperInterface/Tracking/GeocodingTracker.cs" Line="13" Column="40" />
+      <File FileName="SimpleTracking.ShipperInterface/Activity.cs" Line="1" Column="1" />
+      <File FileName="SimpleTracking.ShipperInterface/ShipmentStageEnum.cs" Line="1" Column="1" />
+      <File FileName="SimpleTracking.ShipperInterface/Tracking/LoggingTracker.cs" Line="4" Column="39" />
+      <File FileName="SimpleTracking.ShipperInterface/DataAccess/TrackingDataEntity.cs" Line="21" Column="52" />
+      <File FileName="SimpleTracking.ShipperInterface/PackageTracker.cs" Line="1" Column="1" />
+      <File FileName="Simpletracking/.bowerrc" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
