@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{93EA17ED-106E-4C2E-87FD-142676EEC614}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Simpletracking/Pages/Track.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Simpletracking/ShipperInterface/Web References/FedexTrackWebService/Reference.cs">
     <Files>
       <File FileName="Simpletracking/Startup.cs" Line="1" Column="1" />
       <File FileName="Simpletracking/Program.cs" Line="23" Column="40" />
@@ -17,7 +17,7 @@
       <File FileName="Simpletracking/ShipperInterface/PackageTracker.cs" Line="7" Column="53" />
       <File FileName="Simpletracking/.bowerrc" Line="1" Column="1" />
       <File FileName="Simpletracking/ShipperInterface/Common/Http/PostUtility.cs" Line="20" Column="29" />
-      <File FileName="Simpletracking/Pages/Track.cs" Line="41" Column="89" />
+      <File FileName="Simpletracking/Pages/Track.cs" Line="91" Column="23" />
       <File FileName="Simpletracking/ShipperInterface/Usps/Tracking/TrackingResponse.cs" Line="6" Column="11" />
       <File FileName="Simpletracking/ShipperInterface/Common/CheckDigits.cs" Line="1" Column="1" />
       <File FileName="Simpletracking/ShipperInterface/Common/HashFunctions.cs" Line="1" Column="1" />
@@ -31,6 +31,9 @@
       <File FileName="Simpletracking/ShipperInterface/Dhl/Tracking/DhlScreenScrapeTracker.cs" Line="1" Column="1" />
       <File FileName="Simpletracking/ShipperInterface/Dhl/Tracking/DhlTracker.cs" Line="1" Column="1" />
       <File FileName="Simpletracking/ShipperInterface/Dhl/Tracking/ScreenScrapeResponse.cs" Line="1" Column="1" />
+      <File FileName="Simpletracking/ShipperInterface/Web References/FedexTrackWebService/Reference.cs" Line="18" Column="22" />
+      <File FileName="Simpletracking/ShipperInterface/FedEx/ITrackService.cs" Line="10" Column="1" />
+      <File FileName="Simpletracking/ShipperInterface/FedEx/TrackService.cs" Line="13" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
