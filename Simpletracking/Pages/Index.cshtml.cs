@@ -13,5 +13,10 @@ namespace Simpletracking.Pages
         {
 
         }
+
+        public ActionResult Track(string trackingNumber)
+        {
+            return RedirectToAction("Html", "Track", new { id = trackingNumber });
+        }
     }
 }

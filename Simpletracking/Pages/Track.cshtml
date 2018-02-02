@@ -1,0 +1,54 @@
+﻿@model SimpleTracking.ShipperInterface.ClientServerShared.TrackModel
+
+@{
+    ViewBag.Title = "Tracking for " + @Model.TrackingNumber;
+}
+
+@section scripts
+{
+    <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+    <!--<script type="text/javascript" src="@Url.Content("~/Content/Map.js")"></script>-->
+
+    <script type="text/javascript">
+        if(window && window.external)
+            window.external.msSiteModeRefreshBadge();
+    </script>
+}
+
+@section meta
+{
+    <meta name="msapplication-badge" content="frequency=30; polling-uri=http://localhost:55541/track/sim1.badge" />
+}
+
+<div class="container">
+    <h3>Tracking Results for @Model.TrackingNumber</h3>
+    <a href="~/">&lt; Track Another</a><br />
+    <a href="@(Model.TrackingNumber).rss">RSS Feed</a>
+
+    <table class="table table-striped table-bordered table-hover table-condensed" style="max-width: 500px">
+        <thead>
+            <tr>
+                <td>Date/Time</td>
+                <td>Location</td>
+                <td>Description</td>
+            </tr>
+        </thead>
+        <tbody>
+            @if(@Model.TrackingData != null && @Model.TrackingData.Activity != null) {
+                foreach(var trackEvent in @Model.TrackingData.Activity) {
+                       <tr>
+                           <td>@trackEvent.Timestamp</td>
+                           <td>@trackEvent.LocationDescription</td>
+                           <td>@trackEvent.ShortDescription</td>
+                           <!--<td>@trackEvent.Latitude,@trackEvent.Longitude</td>-->
+                       </tr>
+                 }
+            }
+        </tbody>
+    </table>
+    <p class="trackerTerms">
+       Terms and Conditions: @(Model.TrackingData.UsageRequirements)
+    </p>
+
+    <!--<div id='mapDiv' style="position:absolute; width:inherit; height:600px;"></div>-->
+</div>
