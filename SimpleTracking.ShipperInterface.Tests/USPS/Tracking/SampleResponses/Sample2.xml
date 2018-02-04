@@ -1,5 +1,0 @@
-﻿<Error>
-	<Number>80040b1a</Number>
-	<Description>API Authorization failure. TrackV2 is not a valid API name for this protocol.</Description>
-	<Source>UspsCom::DoAuth</Source>
-</Error>
